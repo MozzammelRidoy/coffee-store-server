@@ -9,7 +9,12 @@ const port = process.env.PORT || 5000;
 
 
 const corsOptions = {
-    origin: ['http://localhost:5173', 'https://coffee-store-d4b6d.web.app'],
+    origin: [
+        'http://localhost:5173/',
+        'https://coffee-store-d4b6d.web.app/',
+        'https://coffee-store-serverdb.netlify.app/'
+        
+    ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
 };
